@@ -285,46 +285,44 @@
   <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
   </div>
 
-<span id="timeDate"></span>
-<span id="times"></span>
+
+<div class="time-container">
+    <br><br>
+    <span id="timeDate"></span>
+    <span id="times"></span>
+</div>
+
 <script>
     function createtime() {
-        // 获取当前时间
         var now = new Date();
-        // 建站时间
         var grt = new Date("03/05/2025 12:00:00");
-        // 计算时间差（毫秒）
         var diff = now - grt;
-
-        // 计算天数
         var days = Math.floor(diff / (1000 * 60 * 60 * 24));
-        // 计算剩余的毫秒数
         var remainingMs = diff % (1000 * 60 * 60 * 24);
-
-        // 计算小时数
         var hours = Math.floor(remainingMs / (1000 * 60 * 60));
-        // 计算剩余的毫秒数
         remainingMs = remainingMs % (1000 * 60 * 60);
-
-        // 计算分钟数
         var minutes = Math.floor(remainingMs / (1000 * 60));
-        // 计算剩余的毫秒数
         remainingMs = remainingMs % (1000 * 60);
-
-        // 计算秒数
         var seconds = Math.floor(remainingMs / 1000);
 
-        // 更新页面上的时间显示
         document.getElementById("timeDate").innerHTML = `本站已运行 ${days} 天`;
         document.getElementById("times").innerHTML = `${hours} 时 ${minutes} 分 ${seconds} 秒`;
     }
 
-    // 首次调用函数
     createtime();
-    // 每 1000 毫秒（1 秒）更新一次时间
     setInterval(createtime, 1000);
 </script>
 
+<style>
+.time-container {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.time-container span {
+    display: block;
+}
+</style>
         
 
 
